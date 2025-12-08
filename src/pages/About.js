@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import {
@@ -91,6 +92,61 @@ const HeroImage = styled(motion.div)`
   @media (max-width: ${theme.breakpoints.tablet}) {
     height: 300px;
     order: -1;
+  }
+`;
+
+const QuoteSection = styled.section`
+  padding: 80px 0;
+  background: linear-gradient(135deg, ${theme.colors.primary} 0%, rgba(26, 35, 50, 0.95) 100%);
+  text-align: center;
+`;
+
+const QuoteContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+`;
+
+const QuoteText = styled(motion.h2)`
+  font-size: 3rem;
+  font-weight: 900;
+  color: ${theme.colors.white};
+  margin-bottom: 40px;
+  line-height: 1.3;
+
+  .highlight {
+    color: ${theme.colors.accent};
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2rem;
+  }
+`;
+
+const ConsultButton = styled(motion.button)`
+  background: ${theme.colors.accent};
+  color: ${theme.colors.primary};
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(253, 185, 19, 0.3);
+
+  &:hover {
+    background: #e6a50d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(253, 185, 19, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
   }
 `;
 
@@ -291,9 +347,8 @@ const About = () => {
   ];
 
   const teamStats = [
-    { number: '25+', label: 'Team Members' },
-    { number: '15+', label: 'Countries Served' },
-    { number: '8+', label: 'Technology Experts' },
+    { number: '5+', label: 'Team Members' },
+    { number: '6+', label: 'Technology Experts' },
     { number: '99%', label: 'Project Success Rate' }
   ];
 
@@ -327,6 +382,30 @@ const About = () => {
           />
         </HeroContent>
       </HeroSection>
+
+      <QuoteSection>
+        <QuoteContainer>
+          <QuoteText
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            We <span className="highlight">Build</span> We <span className="highlight">Design</span> We <span className="highlight">Deliver</span>
+          </QuoteText>
+          <ConsultButton
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = '/contact'}
+          >
+            Book Free Consultation
+          </ConsultButton>
+        </QuoteContainer>
+      </QuoteSection>
 
       <ContentSection>
         <ContentContainer>

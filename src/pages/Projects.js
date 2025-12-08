@@ -308,7 +308,7 @@ const Projects = () => {
       category: 'Web Apps',
       icon: <FaGlobe />,
       description: 'Intelligent travel planning assistant with personalized itinerary recommendations.',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/travel-planner.png',
       technologies: ['React', 'Node.js', 'OpenAI', 'MongoDB'],
       link: '#',
       github: '#'
@@ -344,7 +344,7 @@ const Projects = () => {
       category: 'Web Apps',
       icon: <FaGlobe />,
       description: 'Advanced proctoring solution detecting screen captures and discussions during online exams.',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/screen-capture.png',
       technologies: ['React', 'Python', 'Computer Vision', 'WebRTC'],
       link: '#',
       github: '#'
@@ -356,7 +356,7 @@ const Projects = () => {
       category: 'Web Apps',
       icon: <FaGlobe />,
       description: 'Automated UI generation tool powered by AI for rapid prototyping.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/ui-generator.png',
       technologies: ['React', 'GPT-4', 'Node.js', 'MongoDB'],
       link: '#',
       github: '#'
@@ -440,7 +440,7 @@ const Projects = () => {
       category: 'Web Apps',
       icon: <FaGlobe />,
       description: 'AI-driven document summarization tool for quick insights from lengthy documents.',
-      image: 'https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/document-summarizer.png',
       technologies: ['React', 'NLP', 'Python', 'TensorFlow'],
       link: '#',
       github: '#'
@@ -452,7 +452,7 @@ const Projects = () => {
       category: 'Web Apps',
       icon: <FaGlobe />,
       description: 'Interactive chatbot for querying and extracting information from PDF documents.',
-      image: 'https://images.unsplash.com/photo-1544396821-4dd40b938ad3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/pdf-chatbot.png',
       technologies: ['React', 'LangChain', 'OpenAI', 'Vector DB'],
       link: '#',
       github: '#'
@@ -472,7 +472,7 @@ const Projects = () => {
     },
     {
       id: 17,
-      title: 'Entertainment Slot Booking',
+      title: 'Entertainment Ease',
       client: 'Entertainment Industry',
       category: 'Mobile Apps',
       icon: <FaMobile />,
@@ -502,7 +502,7 @@ const Projects = () => {
       category: 'Machine Learning',
       icon: <FaCogs />,
       description: 'AI-powered skin disease detection system using computer vision and deep learning.',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/skin-detection.png',
       technologies: ['Python', 'TensorFlow', 'CNN', 'Flask'],
       link: '#',
       github: '#'

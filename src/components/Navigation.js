@@ -124,6 +124,11 @@ const NavLink = styled(Link)`
       width: 100%;
     }
   }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    color: ${theme.colors.textPrimary};
+    font-size: 1.1rem;
+  }
 `;
 
 const Hamburger = styled.button`

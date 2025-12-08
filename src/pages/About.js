@@ -354,6 +354,19 @@ const About = () => {
 
   return (
     <AboutContainer>
+      <QuoteSection>
+        <QuoteContainer>
+          <QuoteText
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            We <span className="highlight">Build</span> We <span className="highlight">Design</span> We <span className="highlight">Deliver</span>
+          </QuoteText>
+        </QuoteContainer>
+      </QuoteSection>
+
       <HeroSection>
         <HeroContent>
           <HeroText>
@@ -383,29 +396,7 @@ const About = () => {
         </HeroContent>
       </HeroSection>
 
-      <QuoteSection>
-        <QuoteContainer>
-          <QuoteText
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            We <span className="highlight">Build</span> We <span className="highlight">Design</span> We <span className="highlight">Deliver</span>
-          </QuoteText>
-          <ConsultButton
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => window.location.href = '/contact'}
-          >
-            Book Free Consultation
-          </ConsultButton>
-        </QuoteContainer>
-      </QuoteSection>
+
 
       <ContentSection>
         <ContentContainer>

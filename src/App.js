@@ -1,51 +1,37 @@
-import React, { useState, useMemo } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme, AnimatedBackground } from './styles/GlobalStyles';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-//Utils
-import { createMuiTheme, ThemeProvider, CssBaseline, useMediaQuery } from "@material-ui/core";
-
-//Styles
-import "./assets/scss/app.scss";
-
-//Pages
-import Home from "./pages/Home";
-
-//Components
-import Header from "./components/Header";
-
-const App = () => {
-	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-	const [page, setPage] = useState(0);
-	const theme = useMemo(
-		() =>
-			createMuiTheme({
-				palette: {
-					type: prefersDarkMode ? "dark" : "light"
-				}
-			}),
-		[prefersDarkMode]
-	);
-
-	const handleChangePage = (event, newPage) => {
-		setPage(newPage);
-	};
-	const switchPage = () => {
-		switch (page) {
-			case 0:
-				return <Home changePage={handleChangePage} />;
-			default:
-				return <h1>404 Page</h1>;
-		}
-	};
-
-	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
-
-			<Header />
-
-			{switchPage()}
-		</ThemeProvider>
-	);
-};
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Router>
+        <div className="App">
+          <AnimatedBackground />
+          <Navigation />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
+  );
+}
 
 export default App;

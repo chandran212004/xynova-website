@@ -167,6 +167,10 @@ const ProcessContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: 0 15px;
+  }
 `;
 
 const ProcessTimeline = styled.div`
@@ -207,8 +211,9 @@ const ProcessStep = styled(motion.div)`
   }
 
   @media (max-width: ${theme.breakpoints.tablet}) {
-    grid-template-columns: auto 1fr;
-    gap: 30px;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
     
     &:nth-child(even) {
       .step-content, .step-number {
@@ -218,6 +223,11 @@ const ProcessStep = styled(motion.div)`
         text-align: left;
       }
     }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    gap: 15px;
+    margin-bottom: 40px;
   }
 `;
 

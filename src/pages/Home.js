@@ -281,7 +281,7 @@ const ServiceCard = styled(Card)`
 
 const StatsSection = styled.section`
   padding: 80px 0;
-  background: linear-gradient(135deg, #F8FAFC 0%, #E8EAF6 100%);
+  background: rgba(26, 35, 50, 0.3);
 `;
 
 const StatsContainer = styled.div`

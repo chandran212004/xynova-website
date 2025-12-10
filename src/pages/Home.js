@@ -194,8 +194,9 @@ const TechGrid = styled.div`
   margin: 0 auto;
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 10px;
   }
 `;
 

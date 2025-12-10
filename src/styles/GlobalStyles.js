@@ -7,16 +7,27 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #FAFBFC 0%, #F8FAFC 100%);
     color: #1E293B;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     line-height: 1.6;
   }
 
-  html {
-    scroll-behavior: smooth;
+  #root, .App {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   a {

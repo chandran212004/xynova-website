@@ -188,7 +188,12 @@ const ProcessTimeline = styled.div`
     background: ${theme.colors.accent};
 
     @media (max-width: ${theme.breakpoints.tablet}) {
-      left: 20px;
+      left: 30px;
+      transform: none;
+    }
+    
+    @media (max-width: ${theme.breakpoints.mobile}) {
+      left: 25px;
     }
   }
 `;

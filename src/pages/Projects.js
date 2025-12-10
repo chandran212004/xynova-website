@@ -606,7 +606,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <Button primary>
-              <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link to="/contact#contact-form" style={{ textDecoration: 'none', color: 'inherit' }}>
                 Get Started
               </Link>
             </Button>

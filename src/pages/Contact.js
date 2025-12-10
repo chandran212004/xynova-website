@@ -443,7 +443,7 @@ const Contact = () => {
         </HeroContent>
       </HeroSection>
 
-      <ContactSection>
+      <ContactSection id="contact-form">
         <ContactContainer2>
           <ContactGrid>
             <motion.div

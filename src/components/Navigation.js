@@ -86,7 +86,7 @@ const NavMenu = styled.ul`
     left: ${props => props.isOpen ? '0' : '-100%'};
     top: 70px;
     flex-direction: column;
-    background: ${theme.colors.secondary};
+    background: rgba(26, 35, 50, 0.95);
     width: 100%;
     padding: 40px 20px;
     gap: 30px;
@@ -126,7 +126,7 @@ const NavLink = styled(Link)`
   }
 
   @media (max-width: ${theme.breakpoints.tablet}) {
-    color: ${theme.colors.textPrimary};
+    color: #ffffff;
     font-size: 1.1rem;
   }
 `;

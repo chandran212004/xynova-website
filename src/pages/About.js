@@ -650,7 +650,7 @@ const About = () => {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate('/contact')}
+            onClick={() => navigate('/contact#contact-form')}
           >
             Get In Touch
           </JoinTeamButton>

@@ -609,39 +609,6 @@ const Contact = () => {
           </motion.div>
         </MapContainer>
       </MapSection>
-
-      <CTASection>
-        <CTAContainer>
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Prefer to Schedule a Call?
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            Book a free consultation with our experts to discuss your project
-            requirements and get personalized recommendations.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <Button primary>
-              <FaCalendarAlt />
-              Book Free Consultation
-            </Button>
-          </motion.div>
-        </CTAContainer>
-      </CTASection>
     </ContactContainer>
   );
 };

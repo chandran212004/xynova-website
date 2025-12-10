@@ -248,13 +248,23 @@ const StepContent = styled.div`
   h4 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: ${theme.colors.white};
+    color: ${theme.colors.textPrimary};
     font-weight: bold;
   }
 
   p {
     color: ${theme.colors.textPrimary};
     line-height: 1.6;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    h4 {
+      font-size: 1.2rem;
+    }
+    
+    p {
+      font-size: 0.95rem;
+    }
   }
 `;
 

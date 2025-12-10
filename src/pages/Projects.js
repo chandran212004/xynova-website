@@ -70,7 +70,10 @@ const FilterButtons = styled.div`
   margin-bottom: 60px;
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 10px;
   }
 `;
 

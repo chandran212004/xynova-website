@@ -198,6 +198,10 @@ const ContentText = styled.div`
     margin-bottom: 20px;
     color: ${theme.colors.accent};
     font-weight: bold;
+    
+    @media (max-width: ${theme.breakpoints.mobile}) {
+      font-size: 1.8rem;
+    }
   }
 
   p {
@@ -205,6 +209,11 @@ const ContentText = styled.div`
     color: ${theme.colors.textPrimary};
     line-height: 1.7;
     margin-bottom: 20px;
+    
+    @media (max-width: ${theme.breakpoints.mobile}) {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
   }
 `;
 
